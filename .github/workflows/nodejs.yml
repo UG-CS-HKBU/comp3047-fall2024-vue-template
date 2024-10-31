@@ -20,6 +20,9 @@ jobs:
         with:
           name: dist
           path: dist/
+  pack:
+    runs-on: ubuntu-latest
+    steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
